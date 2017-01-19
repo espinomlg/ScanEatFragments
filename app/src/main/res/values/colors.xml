@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2eab4a</color>
+    <color name="colorPrimaryDark">#1B5E20</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorTextHighlight">#eceff1</color>
+    <color name="colorDescription">#e0e0e0</color>
+    <color name="blackAlpha">#DC000000</color>
+    <color name="black">#FE000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="graylane">#8C8C8C</color>
+</resources>

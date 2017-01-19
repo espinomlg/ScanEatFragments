@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uramaki_unagi_roll_1"
+    android:id="@+id/dish_background"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dish_gradient">
+
+    <!-- START [Section ratings]-->
+    <Button
+        android:text="@string/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_buttondark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/dish_btn_rate" />
+
+    <TextView
+        android:text="@string/presentation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/dish_btn_rate"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorTextHighlight"
+        android:id="@+id/dish_txv_presentation" />
+
+    <TextView
+        android:text="@string/quality_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/dish_btn_rate"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorTextHighlight"
+        android:id="@+id/dish_txv_qualityprice" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Material.Light.RatingBar.Small"
+        android:rating="5"
+        android:stepSize="0.5"
+        android:numStars="5"
+        android:layout_below="@id/dish_txv_presentation"
+        android:layout_alignStart="@id/dish_txv_presentation"
+        android:layout_marginTop="5dp"
+        android:id="@+id/dish_ratbar_presentation"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Material.Light.RatingBar.Small"
+        android:rating="5"
+        android:stepSize="0.5"
+        android:numStars="5"
+        android:layout_below="@id/dish_txv_qualityprice"
+        android:layout_alignStart="@id/dish_txv_qualityprice"
+        android:layout_marginTop="5dp"
+        android:id="@+id/dish_ratbar_qualityprice"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/dish_btn_rate"
+        android:background="@color/graylane"
+        android:id="@+id/dish_separator_ratings"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="45dp"
+        android:layout_toStartOf="@id/dish_txv_presentation"
+        android:layout_alignTop="@id/dish_txv_presentation"
+        android:layout_marginEnd="25dp"
+        android:background="@color/graylane"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="45dp"
+        android:layout_toEndOf="@id/dish_ratbar_presentation"
+        android:layout_alignTop="@id/dish_txv_presentation"
+        android:layout_marginStart="30dp"
+        android:background="@color/graylane"/>
+
+    <!-- END [Section ratings]-->
+
+    <!-- START [Section ingredients]-->
+    <TextView
+        android:text="ingredientes variables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dish_separator_ratings"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textColor="@color/colorDescription"
+        android:id="@+id/dish_txv_ingredients" />
+
+    <TextView
+        android:text="@string/ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dish_txv_ingredients"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorTextHighlight"
+        android:id="@+id/dish_txv_ingredientstitle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/dish_txv_ingredientstitle"
+        android:background="@color/graylane"
+        android:textColor="@color/colorTextHighlight"
+        android:id="@+id/dish_separator_ingredients"/>
+
+
+    <!-- END [Section ingredients]-->
+
+    <!-- START [Section dish description]-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dish_separator_ingredients"
+        android:layout_alignParentStart="true"
+        android:id="@+id/dish_linear_cuisine">
+
+        <TextView
+            android:text="ingredientes variables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dish_separator_ratings"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorDescription"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="contenido variable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dish_linear_cuisine"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textColor="@color/colorDescription"
+        android:id="@+id/dish_txv_description" />
+
+    <TextView
+        android:text="restaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dish_txv_description"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/dish_txv_restaurantname" />
+
+    <TextView
+        android:text="Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dish_txv_restaurantname"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/colorTextHighlight"
+        android:id="@+id/dish_txv_dishname" />
+
+    <TextView
+        android:text="Precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dish_txv_dishname"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/dish_txv_price" />
+
+    <!-- END [Section dish description]-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/dish_linear_allergens"/>
+
+
+</RelativeLayout>
+</FrameLayout>

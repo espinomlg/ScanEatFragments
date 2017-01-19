@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cuisine">
+        <item>Africana</item>
+        <item>Alemana</item>
+        <item>Americana</item>
+        <item>Andaluza</item>
+        <item>Árabe</item>
+        <item>Argentina</item>
+        <item>Arroces</item>
+        <item>Asador</item>
+        <item>Asiática</item>
+        <item>Asturiana</item>
+        <item>Bar</item>
+        <item>Barbacoa</item>
+        <item>Brasileña</item>
+        <item>Caribeña</item>
+        <item>Carnes</item>
+        <item>Caza</item>
+        <item>Celíaca</item>
+        <item>China</item>
+        <item>Colombiana</item>
+        <item>Coreana</item>
+        <item>Creativa</item>
+        <item>Cubana</item>
+        <item>De cuchara</item>
+        <item>De fusión</item>
+        <item>De mercado</item>
+        <item>Del norte</item>
+        <item>Dulces</item>
+        <item>Egipcia</item>
+        <item>Española</item>
+        <item>Francesa</item>
+        <item>Fujian</item>
+        <item>Gallega</item>
+        <item>Gastrobar</item>
+        <item>Griega</item>
+        <item>Hamburguesas</item>
+        <item>Hindú</item>
+        <item>Indonesia</item>
+        <item>Internacional</item>
+        <item>Italiana</item>
+        <item>Japonesa</item>
+        <item>Libanesa</item>
+        <item>Marisco</item>
+        <item>Marroquí</item>
+        <item>Mediterránea</item>
+        <item>Mexicana</item>
+        <item>Peruana</item>
+        <item>Pescaíto</item>
+        <item>Pinchos y Tapas</item>
+        <item>Pizza</item>
+        <item>Sushi</item>
+        <item>Tailandesa</item>
+        <item>Turca</item>
+        <item>Vasca</item>
+        <item>Vegana</item>
+        <item>Vegetariana</item>
+        <item>Vietnamita</item>
+    </string-array>
+</resources>
